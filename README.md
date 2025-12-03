@@ -1,25 +1,37 @@
-Mini Bank Application (Core Python)
+Mini Bank Application 🏦🐍
 
-This is a simple console-based banking application built using Core Python.
-It demonstrates object-oriented programming, modular code structure, input validation, and PIN-based security — all without using any database.
+A Python-based console application that allows users to perform basic banking operations such as creating accounts, secure authentication, deposits, withdrawals, and viewing transaction history.
+This project demonstrates core Python concepts including OOP, modular coding, custom exceptions, hashing, and input validation.
 
 Features
 
-Create account
+✔️ Create new bank accounts
+✔️ Secure PIN authentication (SHA-256 hashing)
+✔️ Check account balance
+✔️ Deposit money
+✔️ Withdraw money safely
+✔️ View complete transaction history
+✔️ In-memory data storage (no database)
+✔️ Clean modular project structure
 
-Secure PIN authentication
+Technologies Used
+Backend:
 
-Check balance
+Python (Core Python)
 
-Deposit money
+Dataclasses
 
-Withdraw money
+hashlib (SHA-256)
 
-View transaction history
+getpass
 
-Handles invalid inputs safely
+Project Structure:
 
-Fully in-memory (no database required)
+Modular Python packages
+
+Separate operation files
+
+Custom exception handling
 
 Project Structure
 mini_bank/
@@ -38,54 +50,26 @@ mini_bank/
     ├── input_utils.py
     └── menu.py
 
-Concepts Used
-
-Classes and Objects
-
-Encapsulation
-
-Custom Exceptions
-
-Modular Code Organization
-
-SHA-256 Hashing for PIN
-
-Menu-Driven Program
-
-Input Validation
-
 How to Run
 
-Run the application using:
+Install Python and run:
 
 python -m mini_bank.main
 
 
-Optional run.bat file:
+To use a batch file:
 
 python -m mini_bank.main
 pause
 
+Notes
 
-Double-click run.bat to launch the app.
+All data is temporary (in-memory only).
 
-Example Output
-=== MINI BANK ===
-1. Create account
-2. Select account
-3. List accounts
-4. Exit
+No database is used.
 
-Future Improvements
+PINs are hashed using SHA-256 for security.
 
-Add data storage using JSON or SQLite
+Ideal for learning Core Python fundamentals.
 
-Add PIN change feature
-
-Add mini-statement options
-
-Add admin role
-
-Author
-
-Kiran Poojary
+Done by: Kiran Poojary
