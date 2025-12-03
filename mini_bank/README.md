@@ -1,27 +1,27 @@
 Mini Bank Application (Core Python)
 
-This is a simple console-based banking application built using Core Python.
-It demonstrates object-oriented programming, modular code structure, input validation, and PIN-based security — all without using any database.
+A simple console-based banking application built using Core Python.
+It demonstrates clean modular design, OOP concepts, input validation, and PIN-based security — all running fully in-memory without any database.
 
-Features
+📌 Features
 
-Create account
+Create new bank accounts
 
-Secure PIN authentication
+Secure PIN authentication (SHA-256 hashed)
 
-Check balance
+Check account balance
 
 Deposit money
 
 Withdraw money
 
-View transaction history
+View full transaction history
 
-Handles invalid inputs safely
+Safe handling of invalid inputs
 
-Fully in-memory (no database required)
+Lightweight & fast — no external database
 
-Project Structure
+📂 Project Structure
 mini_bank/
 ├── account.py
 ├── exceptions.py
@@ -38,54 +38,50 @@ mini_bank/
     ├── input_utils.py
     └── menu.py
 
-Concepts Used
+🧠 Concepts Used
 
-Classes and Objects
+Classes & Objects
 
 Encapsulation
 
 Custom Exceptions
 
-Modular Code Organization
+Modular Code Architecture
 
-SHA-256 Hashing for PIN
+SHA-256 Hashing for PIN security
 
-Menu-Driven Program
+Menu-driven flow
 
-Input Validation
+Input validation techniques
 
-How to Run
-
-Run the application using:
-
+▶️ How to Run
+Run using Python module:
 python -m mini_bank.main
 
-
-Optional run.bat file:
-
+Optional (run.bat):
 python -m mini_bank.main
 pause
 
 
-Double-click run.bat to launch the app.
+Double-click run.bat to launch the application instantly.
 
-Example Output
+💻 Example Output
 === MINI BANK ===
 1. Create account
 2. Select account
 3. List accounts
 4. Exit
 
-Future Improvements
+🚀 Future Improvements
 
-Add data storage using JSON or SQLite
+Add persistent storage (JSON / SQLite)
 
-Add PIN change feature
+Add PIN change option
 
-Add mini-statement options
+Add mini-statement feature
 
-Add admin role
+Add admin role for managing accounts
 
-Author
+👤 Author
 
 Kiran Poojary
