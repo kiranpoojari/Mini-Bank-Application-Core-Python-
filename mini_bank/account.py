@@ -3,13 +3,13 @@ from datetime import datetime
 import hashlib
 
 @dataclass
-class Transaction:
+class Transaction:   #Transaction class
     type: str
     amount: float
     timestamp: str = field(default_factory=lambda: datetime.utcnow().isoformat() + "Z")
 
 @dataclass
-class Account:
+class Account:    #Account class
     acc_no: str
     holder: str
     _balance: float = 0.0
